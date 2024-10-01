@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+
+    <h1 class="text-center mb-4">Library Management System</h1>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Project Overview</h5>
+            <p class="card-text">This project implements a simple system to manage a library of books. It was developed
+                based on the following requirements:</p>
+            <ul>
+                <li>Create a SQLite database with three tables: <strong>Books</strong>, <strong>Customers</strong>, and
+                    <strong>Loans</strong>.</li>
+                <li>Define the book type to set the maximum loan time for each book using an Enum: 1 (up to 10 days), 2
+                    (up to 5 days), and 3 (up to 2 days).</li>
+                <li>Utilize SQLAlchemy to build classes for each entity, organize the code into separate modules, and
+                    create unit tests.</li>
+                <li>Develop a client application that allows users to manage their book loans.</li>
+                <li>Upload the project to GitHub and deploy it using Render.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">How the Website Works</h5>
+            <p class="card-text">The library is designed for readers who can browse a list of available books, add them
+                to their cart, and view the details of their selected loans. Additionally, authors can publish their
+                books and offer them for reading. Site administrators have access to information about all customers and
+                can monitor books currently on loan, ensuring timely returns.</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="https://github.com/your-repo" class="btn btn-primary" target="_blank">View on GitHub</a>
+        <a href="https://your-render-url" class="btn btn-success" target="_blank">Visit Live Site</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Button to go back to index -->
+    <div class="mt-4">
+        <a href="http://127.0.0.1:5000/" class="btn btn-primary">Return to main page</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+2024-10-01 09:37:08,520 - WARNING -  * Debugger is active!
+2024-10-01 09:37:08,524 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:38:38,256 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:38:46,126 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:38:46,126 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:38:46,127 - INFO -  * Restarting with stat
+2024-10-01 09:38:46,647 - WARNING -  * Debugger is active!
+2024-10-01 09:38:46,651 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:41:00,494 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:41:00,494 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:41:00,495 - INFO -  * Restarting with stat
+2024-10-01 09:41:01,015 - WARNING -  * Debugger is active!
+2024-10-01 09:41:01,019 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:41:37,757 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:41:37,758 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:41:37,758 - INFO -  * Restarting with stat
+2024-10-01 09:41:38,296 - WARNING -  * Debugger is active!
+2024-10-01 09:41:38,300 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:43:21,290 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:43:21,361 - INFO -  * Restarting with stat
+2024-10-01 09:43:26,093 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:43:26,093 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:43:26,094 - INFO -  * Restarting with stat
+2024-10-01 09:43:26,632 - WARNING -  * Debugger is active!
+2024-10-01 09:43:26,636 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:44:07,452 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:44:07,518 - INFO -  * Restarting with stat
+2024-10-01 09:44:08,056 - WARNING -  * Debugger is active!
+2024-10-01 09:44:08,060 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:44:18,293 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:44:18,362 - INFO -  * Restarting with stat
+2024-10-01 09:44:18,898 - WARNING -  * Debugger is active!
+2024-10-01 09:44:18,902 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:44:23,506 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:44:23,506 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:44:23,507 - INFO -  * Restarting with stat
+2024-10-01 09:44:24,043 - WARNING -  * Debugger is active!
+2024-10-01 09:44:24,047 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:45:20,147 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:45:20,216 - INFO -  * Restarting with stat
+2024-10-01 09:45:41,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:45:41,892 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:45:41,893 - INFO -  * Restarting with stat
+2024-10-01 09:45:42,418 - WARNING -  * Debugger is active!
+2024-10-01 09:45:42,422 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:46:02,849 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:46:02,917 - INFO -  * Restarting with stat
+2024-10-01 09:46:03,457 - WARNING -  * Debugger is active!
+2024-10-01 09:46:03,461 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:46:10,636 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:46:10,636 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:46:10,637 - INFO -  * Restarting with stat
+2024-10-01 09:46:11,162 - WARNING -  * Debugger is active!
+2024-10-01 09:46:11,166 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:47:52,885 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:47:52,886 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:47:52,887 - INFO -  * Restarting with stat
+2024-10-01 09:47:53,406 - WARNING -  * Debugger is active!
+2024-10-01 09:47:53,410 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:48:31,162 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:48:31,236 - INFO -  * Restarting with stat
+2024-10-01 09:48:31,788 - WARNING -  * Debugger is active!
+2024-10-01 09:48:31,792 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:48:32,854 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:48:32,941 - INFO -  * Restarting with stat
+2024-10-01 09:49:19,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-01 09:49:19,528 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-01 09:49:19,529 - INFO -  * Restarting with stat
+2024-10-01 09:49:20,052 - WARNING -  * Debugger is active!
+2024-10-01 09:49:20,056 - INFO -  * Debugger PIN: 113-289-575
+2024-10-01 09:49:36,402 - INFO -  * Detected change in 'D:\\PYTHON\\John Bryce\\Project\\Project_library\\app.py', reloading
+2024-10-01 09:49:36,468 - INFO -  * Restarting with stat
+2024-10-01 09:49:43,232 - INFO -  * Restarting with stat
+2024-10-01 10:01:27,791 - list_customers
+2024-10-01 10:01:28,958 - add_customer called
+2024-10-01 10:07:36,255 - list_customers
+2024-10-01 10:09:05,668 - list_customers
+2024-10-01 10:13:21,174 - list_customers
+2024-10-01 10:14:59,681 - list_customers
+2024-10-01 10:26:19,344 - list_books called
+2024-10-01 10:26:21,957 - list_customers
+2024-10-01 11:57:07,199 - list_books called
+2024-10-01 11:57:10,960 - list_customers
+2024-10-01 12:37:15,356 - list_books called
+2024-10-01 12:37:19,005 - list_customers
+2024-10-01 12:44:44,111 - list_customers
+2024-10-01 12:46:43,583 - list_books called
+2024-10-01 12:48:44,474 - list_customers
+2024-10-01 12:57:48,747 - admin
+2024-10-01 12:57:57,343 - delete_customer called for customer id: 2
+2024-10-01 12:57:57,353 - Customer deleted: 2
+2024-10-01 12:57:57,353 - Exception on /customers/delete/2 [POST]
+Traceback (most recent call last):
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\app.py", line 257, in delete_customer
+    return redirect(url_for('list_customers', delete_success=True))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_customers' with values ['delete_success']. Did you mean 'edit_customer' instead?
+2024-10-01 12:58:02,987 - admin
+2024-10-01 12:58:08,223 - delete_customer called for customer id: 1
+2024-10-01 12:58:08,230 - Customer deleted: 1
+2024-10-01 12:58:08,230 - Exception on /customers/delete/1 [POST]
+Traceback (most recent call last):
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\app.py", line 257, in delete_customer
+    return redirect(url_for('list_customers', delete_success=True))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_customers' with values ['delete_success']. Did you mean 'edit_customer' instead?
+2024-10-01 12:58:13,362 - admin
+2024-10-01 12:58:15,166 - edit_customer called for customer id: 3
+2024-10-01 12:58:15,170 - Exception on /customers/edit/3 [GET]
+Traceback (most recent call last):
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\app.py", line 247, in edit_customer
+    return render_template('edit_customer.html', customer=customer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "D:\PYTHON\John Bryce\Project\Project_library\templates\edit_customer.html", line 32, in top-level template code
+    <a href="{{ url_for('list_customers') }}">Back</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PYTHON\John Bryce\Project\Project_library\env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_customers'. Did you mean 'edit_customer' instead?
+2024-10-01 13:06:15,461 - admin
+2024-10-01 13:06:24,251 - delete_customer called for customer id: 5
+2024-10-01 13:06:24,259 - Customer deleted: 5
+2024-10-01 13:06:24,264 - admin
+2024-10-01 13:06:28,488 - admin
+2024-10-01 13:06:43,941 - admin
+2024-10-01 17:27:03,446 - list_books called
+2024-10-01 17:27:19,430 - list_books called
+2024-10-01 17:27:19,430 - Searching books by category: Classic
+2024-10-01 17:27:22,592 - Attempting to add book ID 2 to cart
+2024-10-01 17:27:22,599 - Error adding book ID 2 to cart: name 'timedelta' is not defined
+2024-10-01 17:27:22,609 - list_books called
+2024-10-01 17:27:26,050 - list_books called
+2024-10-01 17:27:26,050 - Showing all books
+2024-10-01 17:27:36,105 - admin
+2024-10-01 17:27:51,407 - add_customer called
