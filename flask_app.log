@@ -225,3 +225,75 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_c
 2024-10-01 17:27:26,050 - Showing all books
 2024-10-01 17:27:36,105 - admin
 2024-10-01 17:27:51,407 - add_customer called
+2024-10-08 11:09:43,240 - list_books called
+2024-10-08 11:09:46,565 - admin
+2024-10-08 11:09:57,964 - admin
+2024-10-08 11:20:43,659 - list_books called
+2024-10-08 11:20:45,928 - Viewing cart for customer ID 1
+2024-10-08 11:20:48,187 - list_books called
+2024-10-08 11:20:49,768 - Attempting to add book ID 5 to cart
+2024-10-08 11:20:49,777 - Error adding book ID 5 to cart: name 'timedelta' is not defined
+2024-10-08 11:20:49,781 - list_books called
+2024-10-08 11:20:52,012 - Attempting to add book ID 5 to cart
+2024-10-08 11:20:52,012 - Error adding book ID 5 to cart: name 'timedelta' is not defined
+2024-10-08 11:20:52,017 - list_books called
+2024-10-08 11:20:52,636 - Attempting to add book ID 4 to cart
+2024-10-08 11:20:52,637 - Error adding book ID 4 to cart: name 'timedelta' is not defined
+2024-10-08 11:20:52,644 - list_books called
+2024-10-08 11:20:53,068 - Attempting to add book ID 3 to cart
+2024-10-08 11:20:53,069 - Error adding book ID 3 to cart: name 'timedelta' is not defined
+2024-10-08 11:20:53,074 - list_books called
+2024-10-08 11:20:53,428 - Attempting to add book ID 2 to cart
+2024-10-08 11:20:53,429 - Error adding book ID 2 to cart: name 'timedelta' is not defined
+2024-10-08 11:20:53,433 - list_books called
+2024-10-08 11:20:56,803 - admin
+2024-10-08 11:21:01,239 - edit_customer called for customer id: 4
+2024-10-08 11:21:14,460 - admin
+2024-10-08 11:21:15,580 - edit_customer called for customer id: 3
+2024-10-08 11:21:20,070 - delete_customer called for customer id: 3
+2024-10-08 11:21:20,078 - Customer deleted: 3
+2024-10-08 11:21:20,082 - admin
+2024-10-08 11:21:31,739 - admin
+2024-10-08 11:40:26,289 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-08 11:40:26,294 - list_books called
+2024-10-08 11:40:34,159 - Attempting to add book ID 6 to cart
+2024-10-08 11:40:34,160 - Error adding book ID 6 to cart: name 'timedelta' is not defined
+2024-10-08 11:40:34,165 - list_books called
+2024-10-08 11:45:11,436 - list_books called
+2024-10-08 11:45:11,437 - Showing all books
+2024-10-08 11:45:16,952 - list_books called
+2024-10-08 11:45:16,953 - Searching books by category: Science Fiction
+2024-10-08 11:45:19,039 - list_books called
+2024-10-08 11:45:19,040 - Showing all books
+2024-10-08 11:47:16,319 - Viewing cart for customer ID 1
+2024-10-09 11:02:33,695 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-09 11:02:33,700 - list_books called
+2024-10-09 11:02:47,338 - list_books called
+2024-10-09 11:02:47,339 - Searching books by author: Isaac Asimov
+2024-10-09 11:02:52,981 - list_books called
+2024-10-09 11:02:52,983 - Searching books by year: 1951
+2024-10-09 11:03:01,677 - list_books called
+2024-10-09 11:03:01,678 - Searching books by year: 1869
+2024-10-09 11:03:07,437 - Attempting to add book ID 2 to cart
+2024-10-09 11:03:07,437 - Error adding book ID 2 to cart: name 'timedelta' is not defined
+2024-10-09 11:03:07,441 - list_books called
+2024-10-09 11:03:11,822 - list_books called
+2024-10-09 11:03:11,823 - Showing all books
+2024-10-09 11:03:27,493 - list_books called
+2024-10-09 11:03:29,409 - Viewing cart for customer ID 1
+2024-10-09 11:03:30,944 - list_books called
+2024-10-09 11:03:42,204 - admin
+2024-10-09 11:04:05,378 - Book ID 1 updated successfully.
+2024-10-09 11:04:05,382 - list_books called
+2024-10-09 15:59:11,438 - list_books called
+2024-10-09 16:01:06,004 - list_books called
+2024-10-09 16:01:08,913 - list_books called
+2024-10-09 16:01:23,590 - list_books called
+2024-10-09 16:02:57,523 - list_books called
+2024-10-09 16:04:42,260 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-09 16:04:42,264 - list_books called
+2024-10-09 16:17:38,637 - list_books called
+2024-10-09 16:17:44,805 - admin
+2024-10-09 16:17:48,152 - add_customer called
+2024-10-09 16:31:41,962 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-09 16:31:41,962 - list_books called

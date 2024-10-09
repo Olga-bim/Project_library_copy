@@ -55,7 +55,7 @@
         <div class="mb-3">
             <label for="loan_type" class="form-label">Loan Type:</label>
             <select name="loan_type" id="loan_type" class="form-select" onchange="calculateReturnDate()">
-                <option value="">Select Loan Type</option>
+                <option value=""></option>
                 {% for type in loan_types %}
                     <option value="{{ type }}">{{ type }}</option>
                 {% endfor %}

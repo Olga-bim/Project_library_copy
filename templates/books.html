@@ -58,19 +58,20 @@
         </div>
     </form>
 
-    <h1>Books</h1>
+    <h1>Books</h1> 
     <ul class="list-group mb-4">
         {% for book in books %}
         <li class="list-group-item d-flex justify-content-between align-items-center">
             {{ book.name }} by {{ book.author }} (Category: {{ book.category }}, Loan Type: {{ book.loan_type }})
+            
+            <!-- Форма для добавления книги в корзину -->
             <form action="{{ url_for('add_to_cart', book_id=book.id) }}" method="POST">
-                <input type="hidden" name="cust_id" value="1"> <!-- Replace with actual customer ID -->
-                <button type="submit" class="btn btn-success">Add to Cart</button>
+             <button type="submit" class="btn btn-success">Add to Cart</button>
             </form>
         </li>
         {% endfor %}
     </ul>
-
+    
     <h2>Loan Types</h2>
     <table class="table">
         <thead>

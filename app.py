@@ -2,11 +2,11 @@ from flask import Flask, flash, redirect, render_template, request, session, url
 from flask_cors import CORS
 import os
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from extensions import db  # Импортируйте db из extensions.py
 from models.book import Book
 from models.customer import Customer, CustomerType
-from models.loan import Loan
+from models.loan import Loan, LoanType
 from models.cart import Cart
 
 import unittest
@@ -383,28 +383,39 @@ def delete_loan(id):
     return redirect(url_for('list_loans'))
 
 
+@app.route('/your_route', methods=['GET'])
+def your_view():
+    loan_types = list(LoanType)  # Получаем все типы займа
+    return render_template('your_template.html', loan_types=loan_types)
+
+
 # CRUD for Cart
 @app.route('/add_to_cart/<int:book_id>', methods=['POST'])
 def add_to_cart(book_id):
-    app.logger.info(f'Attempting to add book ID {book_id} to cart')
-    cust_id = request.form.get('cust_id')
-    if not cust_id:
-        flash('Customer ID is missing', 'danger')
-        app.logger.warning('Customer ID is missing')
+    cust_id = request.form.get('cust_id')  # Получаем ID клиента из формы
+    book = Book.query.get(book_id)  # Ищем книгу по её ID
+    
+    if not book:
+        flash('Book not found!', 'danger')  # Если книги нет, показываем сообщение об ошибке
         return redirect(url_for('list_books'))
     
-    try:
-        cart_item = Cart(cust_id=cust_id, book_id=book_id, return_date=datetime.utcnow() + timedelta(days=10))
-        db.session.add(cart_item)
-        db.session.commit()
-        flash('Book added to cart!', 'success')
-        app.logger.info(f'Book ID {book_id} added to cart for customer ID {cust_id}')
-    except Exception as e:
-        db.session.rollback()
-        flash(f'Error adding book to cart: {str(e)}', 'danger')
-        app.logger.error(f'Error adding book ID {book_id} to cart: {str(e)}')
+    # Проверяем, есть ли эта книга уже в корзине
+    existing_cart_item = Cart.query.filter_by(book_id=book.id, cust_id=cust_id).first()
     
-    return redirect(url_for('list_books'))
+    if existing_cart_item:
+        flash(f'{book.name} is already in your cart.', 'warning')  # Если книга уже в корзине, предупреждаем
+    else:
+        # Добавляем книгу в корзину
+        return_date = datetime.utcnow() + timedelta(days=book.loan_type.value)
+        new_cart_item = Cart(cust_id=cust_id, book_id=book.id, loan_date=datetime.utcnow(), return_date=return_date)
+        
+        db.session.add(new_cart_item)  # Добавляем запись в таблицу Cart
+        db.session.commit()  # Сохраняем изменения в базе данных
+        
+        flash(f'{book.name} has been added to your cart!', 'success')  # Показываем сообщение об успешном добавлении
+    
+    return redirect(url_for('list_books'))  # Перенаправляем обратно к списку книг
+
 
 
 @app.route('/cart', methods=['GET'])
