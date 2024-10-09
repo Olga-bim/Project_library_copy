@@ -297,3 +297,7 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_c
 2024-10-09 16:17:48,152 - add_customer called
 2024-10-09 16:31:41,962 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
 2024-10-09 16:31:41,962 - list_books called
+2024-10-09 23:21:11,172 - list_books called
+2024-10-09 23:21:19,191 - Viewing cart for customer ID 1
+2024-10-09 23:21:24,617 - admin
+2024-10-09 23:21:29,720 - add_customer called
