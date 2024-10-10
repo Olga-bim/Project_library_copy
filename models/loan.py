@@ -4,9 +4,9 @@ from enum import Enum
 
 # Перечисление для сроков займа книг
 class LoanType(Enum):
-    TEN_DAYS = 10  # 10 дней
-    FIVE_DAYS = 5  # 5 дней
-    TWO_DAYS = 2   # 2 дня
+    TEN_DAYS = 1 # 10 дней
+    FIVE_DAYS = 2  # 5 дней
+    TWO_DAYS = 3   # 2 дня
 
 # Модель Loan для управления займами книг
 class Loan(db.Model):

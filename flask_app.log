@@ -301,3 +301,232 @@ werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'list_c
 2024-10-09 23:21:19,191 - Viewing cart for customer ID 1
 2024-10-09 23:21:24,617 - admin
 2024-10-09 23:21:29,720 - add_customer called
+2024-10-10 08:49:50,660 - list_books called
+2024-10-10 08:56:35,442 - list_books called
+2024-10-10 08:56:36,959 - list_books called
+2024-10-10 08:56:39,791 - list_books called
+2024-10-10 08:57:45,032 - list_books called
+2024-10-10 08:57:46,355 - list_books called
+2024-10-10 08:58:27,539 - list_books called
+2024-10-10 08:58:27,539 - Searching books by author: Agatha Christie
+2024-10-10 08:59:55,437 - list_books called
+2024-10-10 09:00:52,787 - list_books called
+2024-10-10 09:05:54,533 - list_books called
+2024-10-10 09:06:46,767 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-10 09:06:46,767 - list_books called
+2024-10-10 09:06:53,746 - list_books called
+2024-10-10 09:11:14,870 - list_books called
+2024-10-10 09:16:00,599 - list_books called
+2024-10-10 09:18:47,691 - list_books called
+2024-10-10 09:22:00,798 - list_books called
+2024-10-10 09:23:03,975 - list_books called
+2024-10-10 09:23:25,054 - list_books called
+2024-10-10 09:23:35,021 - list_books called
+2024-10-10 09:23:42,865 - list_books called
+2024-10-10 09:23:45,055 - list_books called
+2024-10-10 09:23:51,172 - list_books called
+2024-10-10 09:23:55,426 - list_books called
+2024-10-10 09:30:06,722 - list_books called
+2024-10-10 09:30:15,932 - list_books called
+2024-10-10 09:35:44,325 - list_books called
+2024-10-10 09:36:04,123 - admin
+2024-10-10 09:36:05,258 - add_customer called
+2024-10-10 09:36:22,598 - add_customer called
+2024-10-10 09:39:46,925 - admin
+2024-10-10 09:39:48,534 - add_customer called
+2024-10-10 09:50:17,274 - list_books called
+2024-10-10 09:50:25,229 - admin
+2024-10-10 09:50:27,697 - add_customer called
+2024-10-10 11:10:21,633 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-10 11:10:21,637 - list_books called
+2024-10-10 11:10:34,956 - list_books called
+2024-10-10 11:10:38,703 - admin
+2024-10-10 11:10:40,036 - add_customer called
+2024-10-10 11:13:58,549 - Attempting to delete customer id: 4
+2024-10-10 11:13:58,561 - admin
+2024-10-10 11:17:09,241 - add_customer called
+2024-10-10 11:21:00,938 - admin
+2024-10-10 11:21:10,335 - edit_customer called for customer id: 1
+2024-10-10 11:21:54,579 - add_customer called
+2024-10-10 11:22:03,142 - list_books called
+2024-10-10 11:22:11,542 - admin
+2024-10-10 11:22:53,799 - admin
+2024-10-10 11:23:18,487 - edit_customer called for customer id: 1
+2024-10-10 11:23:24,426 - edit_customer called for customer id: 2
+2024-10-10 11:23:27,395 - add_customer called
+2024-10-10 12:51:19,610 - Book "Jane Eyre" added successfully for author "Charlotte Bronte".
+2024-10-10 12:51:19,615 - list_books called
+2024-10-10 12:51:29,694 - Viewing cart for customer ID 1
+2024-10-10 12:51:34,268 - list_books called
+2024-10-10 12:51:38,109 - list_books called
+2024-10-10 12:52:05,498 - admin
+2024-10-10 12:52:18,456 - add_customer called
+2024-10-10 12:55:27,865 - add_customer called
+2024-10-10 12:56:03,665 - admin
+2024-10-10 12:56:04,944 - add_customer called
+2024-10-10 12:57:00,763 - add_customer called
+2024-10-10 12:57:42,786 - add_customer called
+2024-10-10 12:57:43,177 - add_customer called
+2024-10-10 12:57:50,600 - add_customer called
+2024-10-10 12:58:01,001 - add_customer called
+2024-10-10 12:58:01,012 - New customer added: 6
+2024-10-10 12:58:01,016 - admin
+2024-10-10 12:58:32,568 - add_customer called
+2024-10-10 12:58:40,227 - add_customer called
+2024-10-10 12:58:40,234 - New customer added: 7
+2024-10-10 12:58:40,239 - admin
+2024-10-10 12:58:45,517 - edit_customer called for customer id: 7
+2024-10-10 12:59:47,834 - add_customer called
+2024-10-10 12:59:50,451 - add_customer called
+2024-10-10 12:59:59,082 - admin
+2024-10-10 12:59:59,825 - add_customer called
+2024-10-10 13:00:37,618 - add_customer called
+2024-10-10 13:00:43,337 - admin
+2024-10-10 13:00:44,416 - add_customer called
+2024-10-10 13:00:49,845 - add_customer called
+2024-10-10 13:01:18,186 - add_customer called
+2024-10-10 13:01:36,276 - add_customer called
+2024-10-10 13:01:36,283 - New customer added: 8
+2024-10-10 13:01:36,287 - admin
+2024-10-10 13:01:52,455 - list_books called
+2024-10-10 13:02:46,716 - admin
+2024-10-10 13:02:52,361 - Attempting to delete customer id: 8
+2024-10-10 13:02:52,375 - admin
+2024-10-10 13:09:47,159 - list_books called
+2024-10-10 13:11:31,998 - list_books called
+2024-10-10 13:11:34,983 - admin
+2024-10-10 13:21:50,222 - admin
+2024-10-10 13:21:51,662 - add_customer called
+2024-10-10 13:22:28,810 - add_customer called
+2024-10-10 13:22:28,821 - New customer added: 8
+2024-10-10 13:22:28,825 - admin
+2024-10-10 13:22:31,454 - edit_customer called for customer id: 8
+2024-10-10 13:22:50,776 - list_books called
+2024-10-10 13:26:23,046 - list_books called
+2024-10-10 13:26:29,311 - admin
+2024-10-10 13:27:11,407 - admin
+2024-10-10 13:29:54,168 - admin
+2024-10-10 13:31:53,679 - admin
+2024-10-10 13:32:00,479 - admin
+2024-10-10 13:32:18,113 - admin
+2024-10-10 13:36:49,017 - admin
+2024-10-10 13:37:09,389 - list_books called
+2024-10-10 13:39:11,301 - list_books called
+2024-10-10 13:39:14,188 - admin
+2024-10-10 13:39:38,611 - admin
+2024-10-10 13:40:57,133 - list_books called
+2024-10-10 13:41:01,079 - Book ID 6 deleted successfully.
+2024-10-10 13:41:01,083 - list_books called
+2024-10-10 13:41:04,974 - Book ID 9 deleted successfully.
+2024-10-10 13:41:04,978 - list_books called
+2024-10-10 13:41:08,837 - Book ID 8 deleted successfully.
+2024-10-10 13:41:08,842 - list_books called
+2024-10-10 13:41:11,901 - Book ID 7 deleted successfully.
+2024-10-10 13:41:11,905 - list_books called
+2024-10-10 13:41:16,565 - Book ID 11 deleted successfully.
+2024-10-10 13:41:16,569 - list_books called
+2024-10-10 13:41:20,262 - Book ID 12 deleted successfully.
+2024-10-10 13:41:20,265 - list_books called
+2024-10-10 13:41:24,374 - list_books called
+2024-10-10 13:41:27,741 - admin
+2024-10-10 13:42:01,829 - list_books called
+2024-10-10 13:42:36,982 - list_books called
+2024-10-10 13:42:40,308 - admin
+2024-10-10 13:44:03,993 - admin
+2024-10-10 13:45:45,816 - admin
+2024-10-10 13:46:03,678 - admin
+2024-10-10 13:47:47,663 - admin
+2024-10-10 13:49:27,223 - admin
+2024-10-10 13:53:15,483 - admin
+2024-10-10 13:57:22,747 - admin
+2024-10-10 13:58:03,085 - admin
+2024-10-10 13:58:21,987 - admin
+2024-10-10 13:59:51,406 - admin
+2024-10-10 14:01:23,400 - list_books called
+2024-10-10 14:03:13,051 - admin
+2024-10-10 14:03:49,692 - add_book called
+2024-10-10 14:03:58,453 - add_book called
+2024-10-10 14:04:07,865 - add_book called
+2024-10-10 14:04:14,278 - add_book called
+2024-10-10 14:04:24,353 - add_book called
+2024-10-10 14:04:32,398 - admin
+2024-10-10 14:04:55,073 - admin
+2024-10-10 14:09:52,743 - admin
+2024-10-10 14:13:50,054 - admin
+2024-10-10 14:16:04,119 - admin
+2024-10-10 14:16:17,201 - admin
+2024-10-10 14:20:38,169 - admin
+2024-10-10 14:21:13,785 - admin
+2024-10-10 14:25:03,071 - admin
+2024-10-10 14:25:08,138 - admin
+2024-10-10 14:26:02,661 - admin
+2024-10-10 14:26:20,513 - admin
+2024-10-10 14:26:21,831 - admin
+2024-10-10 14:26:32,557 - admin
+2024-10-10 14:29:45,103 - admin
+2024-10-10 14:34:06,465 - admin
+2024-10-10 14:34:07,955 - admin
+2024-10-10 14:34:39,896 - admin
+2024-10-10 14:39:21,729 - admin
+2024-10-10 14:40:41,956 - admin
+2024-10-10 14:41:17,565 - admin
+2024-10-10 14:42:22,691 - admin
+2024-10-10 14:43:51,883 - admin
+2024-10-10 14:44:29,562 - admin
+2024-10-10 14:44:51,724 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>]
+2024-10-10 14:45:20,196 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>]
+2024-10-10 14:45:32,187 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>]
+2024-10-10 14:46:24,011 - admin
+2024-10-10 14:46:34,862 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>]
+2024-10-10 14:48:58,248 - admin
+2024-10-10 14:49:09,626 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>]
+2024-10-10 14:51:16,047 - admin
+2024-10-10 14:51:33,045 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>, <Loan 19>]
+2024-10-10 14:52:01,538 - admin
+2024-10-10 14:52:29,712 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>, <Loan 19>, <Loan 20>]
+2024-10-10 14:55:06,737 - admin
+2024-10-10 14:55:44,556 - admin
+2024-10-10 14:55:52,442 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>, <Loan 19>, <Loan 20>, <Loan 21>]
+2024-10-10 14:58:21,619 - admin
+2024-10-10 14:58:31,666 - admin
+2024-10-10 14:58:49,185 - admin
+2024-10-10 14:58:55,915 - list_books called
+2024-10-10 14:59:48,811 - list_books called
+2024-10-10 15:00:06,950 - list_books called
+2024-10-10 15:00:28,011 - admin
+2024-10-10 15:03:01,352 - Accessed admin page
+2024-10-10 15:05:17,707 - Accessed admin page
+2024-10-10 15:06:20,750 - Accessed admin page
+2024-10-10 15:06:24,175 - Accessed admin page
+2024-10-10 15:06:32,311 - Accessed admin page
+2024-10-10 15:08:20,219 - Accessed admin page
+2024-10-10 15:08:28,595 - Accessed admin page
+2024-10-10 15:09:40,148 - Accessed admin page
+2024-10-10 15:09:48,911 - Accessed admin page
+2024-10-10 15:11:01,467 - Accessed admin page
+2024-10-10 15:13:06,918 - Accessed admin page
+2024-10-10 15:14:44,698 - Accessed admin page
+2024-10-10 15:14:58,510 - Book ID 10 deleted successfully.
+2024-10-10 15:14:58,514 - list_books called
+2024-10-10 15:16:48,730 - list_books called
+2024-10-10 15:17:41,804 - list_books called
+2024-10-10 15:18:36,459 - Accessed admin page
+2024-10-10 15:18:38,484 - add_customer called
+2024-10-10 15:19:09,678 - add_customer called
+2024-10-10 15:19:09,688 - New customer added: 9
+2024-10-10 15:19:09,692 - Accessed admin page
+2024-10-10 15:19:23,835 - Loans retrieved: [<Loan 1>, <Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>, <Loan 19>, <Loan 20>]
+2024-10-10 15:21:46,810 - Accessed admin page
+2024-10-10 15:21:54,800 - add_customer called
+2024-10-10 15:22:07,183 - Accessed admin page
+2024-10-10 15:22:11,623 - Loans retrieved: [<Loan 2>, <Loan 3>, <Loan 4>, <Loan 5>, <Loan 6>, <Loan 7>, <Loan 8>, <Loan 9>, <Loan 10>, <Loan 11>, <Loan 12>, <Loan 13>, <Loan 14>, <Loan 15>, <Loan 16>, <Loan 17>, <Loan 18>, <Loan 19>, <Loan 20>]
+2024-10-10 15:24:05,815 - Accessed admin page
+2024-10-10 15:24:09,429 - Accessed admin page
+2024-10-10 15:24:15,241 - Accessed admin page
+2024-10-10 15:24:19,743 - Accessed admin page
+2024-10-10 15:24:23,455 - Accessed admin page
+2024-10-10 15:24:27,141 - Accessed admin page
+2024-10-10 15:24:35,013 - list_books called
+2024-10-10 15:24:41,203 - list_books called
+2024-10-10 15:24:41,204 - Searching books by category: Science Fiction
+2024-10-10 15:24:45,938 - Accessed admin page

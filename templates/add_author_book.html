@@ -56,12 +56,12 @@
             <label for="loan_type" class="form-label">Loan Type:</label>
             <select name="loan_type" id="loan_type" class="form-select" onchange="calculateReturnDate()">
                 <option value=""></option>
-                {% for type in loan_types %}
-                    <option value="{{ type }}">{{ type }}</option>
+                {% for type_name, type_value in loan_types.items() %}
+                    <option value="{{ type_value }}">{{ type_name.replace('_', ' ') }}</option>
                 {% endfor %}
             </select>
         </div>
-
+        
         <!-- Hidden field for customer type -->
         <input type="hidden" name="customer_type" value="1"> <!-- 1 for Author -->
 

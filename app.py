@@ -1,4 +1,4 @@
-from flask import Flask, flash, redirect, render_template, request, session, url_for
+from flask import Flask, flash, jsonify, redirect, render_template, request, session, url_for
 from flask_cors import CORS
 import os
 import logging
@@ -172,6 +172,7 @@ def author_books():
 def about_website_creator():
     return render_template('about_website_creator.html')
 
+
 @app.route('/your_route')
 def your_view_function():
     books = Book.query.all()  
@@ -179,18 +180,20 @@ def your_view_function():
 
     return render_template('your_template.html', books=books, loans=loans)
 
+@app.route('/customers')
+def list_customers():
+    customers = Customer.query.all()
+    return render_template('list_customers.html', customers=customers)
 
 
 # CRUD for Customers
 @app.route('/admin')
 def admin():
-    app.logger.info('admin')
+    app.logger.info('Accessed admin page')
     customers = Customer.query.all()
-    loans = Loan.query.all()
-    books = Book.query.all()
-    delete_success = request.args.get('delete_success', False)
-    return render_template('admin.html', customers=customers, loans=loans, books=books, delete_success=delete_success)
-
+    loans = Loan.query.all()  # Retrieve all loans
+    books = Book.query.all()  # Retrieve all books
+    return render_template('admin.html', customers=customers, loans=loans, books=books, CustomerType=CustomerType)
 
 @app.route('/add_customer', methods=['GET', 'POST'])
 def add_customer():
@@ -199,35 +202,36 @@ def add_customer():
     if request.method == 'POST':
         name = request.form['name']
         city = request.form['city']
-        age = request.form['age']
+        age = int(request.form['age'])
         email = request.form['email']
-        customer_type = request.form['customer_type']
-        book_id = request.form['book_id']
-        loan_date = datetime.utcnow()  
+        customer_type = int(request.form['customer_type'])
 
         if Customer.query.filter_by(email=email).first():
             app.logger.warning(f'Email already exists: {email}')
             flash('Email already exists. Please use a different email.', 'danger')
             return redirect(url_for('add_customer'))
 
-        new_customer = Customer(name=name, city=city, age=age, email=email, customer_type=customer_type)
-        db.session.add(new_customer)
-        db.session.commit()
-        app.logger.info(f'New customer added: {new_customer.id}')
+        new_customer = Customer(
+            name=name,
+            city=city,
+            age=age,
+            email=email,
+            customer_type=customer_type
+        )
 
-        if customer_type == '2':
-            new_loan = Loan(cust_id=new_customer.id, book_id=book_id, loan_date=loan_date)
-            loan_duration = 10  
-            new_loan.set_return_date(loan_duration)
-            db.session.add(new_loan)
+        try:
+            db.session.add(new_customer)
             db.session.commit()
-            app.logger.info(f'New loan created for customer {new_customer.id}')
+            app.logger.info(f'New customer added: {new_customer.id}')
+            flash('Customer added successfully!')
+            return redirect(url_for('admin'))
+        except Exception as e:
+            db.session.rollback()  # Отменяем изменения в случае ошибки
+            app.logger.error(f'Error adding customer: {e}')
+            flash('There was an error adding the customer. Please try again.', 'danger')
 
-        flash('Customer added successfully!')
-        return redirect(url_for('admin'))
+    return render_template('add_customer.html', CustomerType=CustomerType)
 
-    books = Book.query.all()
-    return render_template('add_customer.html', books=books)
 
 
 @app.route('/customers/edit/<int:id>', methods=['GET', 'POST'])
@@ -237,9 +241,9 @@ def edit_customer(id):
     if request.method == 'POST':
         customer.name = request.form['name']
         customer.city = request.form['city']
-        customer.age = request.form['age']
+        customer.age = int(request.form['age'])
         customer.email = request.form['email']
-        customer.customer_type = request.form['customer_type']
+        customer.customer_type = int(request.form['customer_type'])
         db.session.commit()
         app.logger.info(f'Customer updated: {customer.id}')
         flash('Customer updated successfully!')
@@ -248,13 +252,12 @@ def edit_customer(id):
 
 @app.route('/customers/delete/<int:id>', methods=['POST'])
 def delete_customer(id):
-    app.logger.info(f'delete_customer called for customer id: {id}')
+    app.logger.info(f'Attempting to delete customer id: {id}')
     customer = Customer.query.get_or_404(id)
     db.session.delete(customer)
     db.session.commit()
-    app.logger.info(f'Customer deleted: {customer.id}')
     flash('Customer deleted successfully!')
-    return redirect(url_for('admin', delete_success=True))
+    return redirect(url_for('admin'))
 
 # CRUD for Books
 
@@ -295,6 +298,8 @@ def list_books():
     return render_template('books.html', books=books, cart_items=cart_items, categories=categories, authors=authors, years=years, delete_success=delete_success)
 
 
+
+
 @app.route('/books/add', methods=['GET', 'POST'])
 def add_book():
     app.logger.info('add_book called')
@@ -311,7 +316,7 @@ def add_book():
         app.logger.info(f'New book added: {new_book.name} by {new_book.author}')
         return redirect(url_for('list_books'))
     
-    return render_template('add_book.html')
+    return render_template('admin.html')
 
 @app.route('/books/edit/<int:book_id>', methods=['GET', 'POST'])
 def edit_book(book_id):
@@ -329,7 +334,7 @@ def edit_book(book_id):
         return redirect(url_for('list_books'))
     return render_template('edit_book.html', book=book)
 
-@app.route('/books/delete/<int:book_id>', methods=['POST'])
+@app.route('/books/delete/<int:book_id>', methods=['POST']) 
 def delete_book(book_id):
     app.logger.info(f'delete_book called for book id: {book_id}')
     book = Book.query.get_or_404(book_id)
@@ -339,11 +344,11 @@ def delete_book(book_id):
     flash('Book deleted successfully!')
     return redirect(url_for('list_books', delete_success=True))
 
-
 # CRUD  для Loans
 @app.route('/loans')
 def list_loans():
     loans = Loan.query.all()
+    app.logger.info(f'Loans retrieved: {loans}')
     return render_template('loans.html', loans=loans)
 
 @app.route('/loans/add', methods=['GET', 'POST'])
@@ -352,14 +357,30 @@ def add_loan():
         new_loan = Loan(
             cust_id=request.form['cust_id'],
             book_id=request.form['book_id'],
-            loan_date=datetime.strptime(request.form['loan_date'], '%Y-%m-%d'),
-            return_date=datetime.strptime(request.form['return_date'], '%Y-%m-%d')
+            loan_date=datetime.strptime(request.form['loan_date'], '%Y-%m-%d')
         )
+        
+        book = Book.query.get_or_404(new_loan.book_id)
+        loan_type = LoanType(book.loan_type)  # Получаем тип займа как Enum
+
+        new_loan.set_return_date(loan_type)  # Устанавливаем дату возврата
+
         db.session.add(new_loan)
         db.session.commit()
         flash('Loan added successfully!')
         return redirect(url_for('list_loans'))
-    return render_template('add_loan.html')
+    
+    customers = Customer.query.all()
+    books = Book.query.all()  # Получаем список книг
+    return render_template('add_loan.html', customers=customers, books=books)
+
+
+@app.route('/loan_type/<int:book_id>', methods=['GET'])
+def get_loan_type(book_id):
+    book = Book.query.get_or_404(book_id)
+    return jsonify(book.loan_type)
+
+
 
 @app.route('/loans/edit/<int:id>', methods=['GET', 'POST'])
 def edit_loan(id):
@@ -380,61 +401,8 @@ def delete_loan(id):
     db.session.delete(loan)
     db.session.commit()
     flash('Loan deleted successfully!')
-    return redirect(url_for('list_loans'))
+    return redirect(url_for('admin'))  # Redirect to admin page
 
-
-@app.route('/your_route', methods=['GET'])
-def your_view():
-    loan_types = list(LoanType)  # Получаем все типы займа
-    return render_template('your_template.html', loan_types=loan_types)
-
-
-# CRUD for Cart
-@app.route('/add_to_cart/<int:book_id>', methods=['POST'])
-def add_to_cart(book_id):
-    cust_id = request.form.get('cust_id')  # Получаем ID клиента из формы
-    book = Book.query.get(book_id)  # Ищем книгу по её ID
-    
-    if not book:
-        flash('Book not found!', 'danger')  # Если книги нет, показываем сообщение об ошибке
-        return redirect(url_for('list_books'))
-    
-    # Проверяем, есть ли эта книга уже в корзине
-    existing_cart_item = Cart.query.filter_by(book_id=book.id, cust_id=cust_id).first()
-    
-    if existing_cart_item:
-        flash(f'{book.name} is already in your cart.', 'warning')  # Если книга уже в корзине, предупреждаем
-    else:
-        # Добавляем книгу в корзину
-        return_date = datetime.utcnow() + timedelta(days=book.loan_type.value)
-        new_cart_item = Cart(cust_id=cust_id, book_id=book.id, loan_date=datetime.utcnow(), return_date=return_date)
-        
-        db.session.add(new_cart_item)  # Добавляем запись в таблицу Cart
-        db.session.commit()  # Сохраняем изменения в базе данных
-        
-        flash(f'{book.name} has been added to your cart!', 'success')  # Показываем сообщение об успешном добавлении
-    
-    return redirect(url_for('list_books'))  # Перенаправляем обратно к списку книг
-
-
-
-@app.route('/cart', methods=['GET'])
-def view_cart():
-    reader_id = 1  
-    app.logger.info(f'Viewing cart for customer ID {reader_id}')
-    cart_items = Cart.query.filter_by(cust_id=reader_id).all()
-    return render_template('cart.html', cart_items=cart_items)
-
-
-@app.route('/cart/remove/<int:id>', methods=['POST'])
-def remove_from_cart(id):
-    app.logger.info(f'Attempting to remove cart item ID {id}')
-    cart_item = Cart.query.get_or_404(id)
-    db.session.delete(cart_item)
-    db.session.commit()
-    flash('Book removed from cart!')
-    app.logger.info(f'Book ID {cart_item.book_id} removed from cart for customer ID {cart_item.cust_id}')
-    return redirect(url_for('view_cart', cust_id=cart_item.cust_id))
 
 # CRUD for author books
 def get_current_user_id():
@@ -452,6 +420,10 @@ def list_author_books():
     app.logger.info(f'Listing books for author ID {author_id}')
     books = Book.query.filter_by(author_id=author_id).all()
     return render_template('author_books.html', books=books)
+
+def get_loan_types():
+    return {type.name: type.value for type in LoanType}
+
 
 @app.route('/author/books/add', methods=['GET', 'POST'])
 def add_author_book():
